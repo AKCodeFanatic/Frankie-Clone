@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: black;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 30px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #fcf9f9;
+  
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+
+.getTemplate{
+    
+}
+
+.templateButton{
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, rgb(28, 27, 27), rgb(14, 14, 14));
+    /* background-color: black; */
+    color: white;
+    border: none;
+    cursor: pointer;
+    /* border: solid 1px white; */
+}
+
+.templateButton:hover{
+    background-image: linear-gradient(to bottom right,  rgb(14, 14, 14) , rgb(28, 27, 27));
+}
+
+.firstSection{
+    background-image: linear-gradient(black, #1a1a19);
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    height: 100vh;
+    padding-top: 6rem;
+}
+
+.firstForm{
+    display: flex;
+    justify-content: center;
+}
+
+.firstSectionButton{
+    background: gray;
+    color: white;
+    border: none;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+h1{
+    font-weight: 100;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+h3{
+    font-size: 1.12rem;
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+
+input{
+    text-align: left;
+    background: #252424;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.8rem 7rem 0.5rem 0.8rem;
+    margin-right: 0.6rem;
+}
+
+.notifiedButton{
+    font-weight: 500;
+    background: #cbef07;
+    border: none;
+    border-radius: 14px;
+    padding: 0.8rem;
+}
+
+
+
+
+
+
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
+  color: #1b1b1b;
+}
+.content div{
+  font-size: 40px;
+  font-weight: 700;
+}
