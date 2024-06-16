@@ -1,46 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frankie Clone</title>
     <link rel="stylesheet" href="./design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
 
 
     <div class="navbar">
         <nav>
             <div class="logo">
-               Frankie
+                Frankie
             </div>
-            
-           <div class="navlinks">
-            <ul>
+
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+
+            <ul class="mr-20">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Features</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">blog</a></li>
-             </ul>
-           </div>
-
-           <div class="getTemplate">
+            </ul>
+            <div class="getTemplate">
                 <button class="templateButton">Get the Template</button>
-           </div>
-         </nav>
+            </div>
+        </nav>
     </div>
 
-    <section class="firstSection">
+    <section class="firstSection center">
         <div>
-            <button class="firstSectionButton">Unique Technology</button>
-            <h1>Unleash the Power of AI</h1>
-            <h3>Frankie is an AI-powered chatbot app that allows users to have <br>conversations with a virtual assistant.</h3>
+            <button class="firstSectionButton mb-6">Unique Technology</button>
+            <h1 class="text-6xl mb-8">Unleash the Power of AI</h1>
+            <h3 class="text-xl mb-6">Frankie is an AI-powered chatbot app that allows users to have <br>conversations with a virtual
+                assistant.</h3>
 
             <div class="firstForm">
-                <input type="text" placeholder="Email Address ...">
+                <input id="emailInput" type="text" placeholder="Email Address ...">
                 <button class="notifiedButton">Get Notified</button>
             </div>
         </div>
     </section>
+
+    <section style="background-color: #1a1a19;">
+        <div class="whiteSection pt-40 text-center " style="border-radius: 25px;">
+            <div class="rounded bg-slate-300 w-fit m-auto p-2 text-xs mb-6">
+                Features
+            </div>
+            <h3 class="text-4xl mb-16 ">Revolutionize Your Workflow</h3>
+
+            <div class="whiteFirstDiv">
+                <div class="firstFeature pb-10">
+                    <img style="object-fit: contain;" src="./assets/images/phoneImage.webp" alt="">
+                    <h4 class="font-medium text-xl mb-4 ">24/7 Data Collection</h4>
+                    <h5 class="text-slate-500 text-base mb-6">By analyzing user interactions, chat AI can help businesses identify trends and patterns, making it <br> easier to tailor products.</h5>
+                    <button class="mainButton">Get Started</button>
+
+                </div>
+
+                <div class="secondFeature pt-10 pr-0">
+                    <h4 class="font-medium text-xl mb-4 ">Personalization</h4>
+                    <h5 class="text-slate-500 text-base mb-6">This could include addressing the user by name, offering customized product recommendations, or remembering previous preferences.</h5>
+                    <button class="mainButton mb-10">Get Started</button>
+                    <img style="border-radius: 10px 0 25px 0;" src="./assets/images/chatGpt.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="whiteSecondDiv center mb-24 ">
+                <div class="secondDivImage ml-80">
+                    <img style="object-fit: contain;" src="./assets/images/featImage.avif" alt="">
+                </div>
+                <h2 style="font-size: 1.4rem; font-weight: 100; margin-bottom: 1rem;" >More Accurate Responses</h2>
+                <p style="    margin-bottom: 1.5rem; color: gray;">This advantage emphasizes how chat AI can provide faster and <br> more accurate responses to user
+                    inquiries.</p>
+                <button class="mainButton">Get Started</button>
+
+            </div>
+
+            <div class="whiteThirdDiv flex justify-between ">
+                <div class="bg-white flex flex-col">
+                    <div class="text-left">
+                        <div class="rounded bg-slate-300 w-fit  p-2 text-xs mb-6 ">
+                           <h1>Testimonials</h1>
+                        </div>
+                        <h2 class="text-4xl mb-6">What Customers Say</h2>
+                        <p class="text-slate-800">Read what our satisfied customers have to say <br> about our products/services. We take pride in <br>providing exceptional customer service and value <br>their feedback.</p>
+                    </div>
+
+                    <div>
+
+                    </div>
+                </div>
+                <div class="bg-white">
+                    This is div 2
+                </div>
+            </div>
+        </div>
+
+    </section>
 </body>
+
 </html>
